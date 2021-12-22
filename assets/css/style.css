@@ -67,12 +67,12 @@ body {
   /* Hero Style Start */
   .hero {
       padding: 60px;
-      background-image: url("../images/hero-bg.jpg");      
+      background-image: url("../images/hero-bg.jpg");
+      display: flex;
       background-size: cover;
       background-position: center;
-      display: flex;
       justify-content: center;
-      flex-wrap: wrap;  
+      flex-wrap: wrap;
   }
   .hero-cta {
     width: 35%;
@@ -93,9 +93,7 @@ body {
     color: #024e76;
     border-style: solid;
     border-width: 3px;
-    border-color: #024e76;
-    width: 40%;
-    margin: 3.5%;    
+    border-color: #024e76;    
 }
 .hero-form h3 {
     font-size: 24px;
@@ -123,7 +121,6 @@ body {
     padding: 10px 20px;
     font-size: 16px;
 }
-
   /* Hero Style End */
 
 .intro {
