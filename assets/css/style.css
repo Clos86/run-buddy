@@ -3,15 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+  --primary-color: #fce138;
+  --secondary-color: #024e76;
+  --tertiary-color: #39a6b2;
+}
+
 body {
     /* more on this crazy alphanumerical value in a minute! */
-    color: #39a6b2;
+    color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
   }
   /* apply styles to <header> */
   header {
       padding: 20px 35px;
-      background-color: #39a6b2;
+      background-color: var(--tertiary-color);
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -28,13 +35,13 @@ body {
   header h1 {
       font-weight: bold;
       font-size: 36px;
-      color: #fce138;
+      color: var(--primary-color);
       margin: 0;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);     
   }
   header a {
       text-decoration: none;
-      color: #fce138;
+      color: var(--primary-color);
   }
   header nav {      
       margin: 7px 0;
@@ -53,13 +60,13 @@ body {
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   header nav ul li a:hover {
-    background: #fce138;
-    color: #024e76;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
   }
   footer {
-      background: #fce138;
+      background: var(--primary-color);
       width: 100%;
       padding: 40px 35px;
       display: flex;
@@ -67,7 +74,7 @@ body {
       flex-wrap: wrap;
   }
   footer h2 {     
-      color: #024e76;
+      color: var(--secondary-color);
       font-size: 30px;
       margin: 0;
   }
